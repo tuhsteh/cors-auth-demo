@@ -17,7 +17,7 @@ services:
       - MONGODB_INITDB_ENABLE_WIREDTIGER_COMPRESSION=true
       - MONGODB_INITDB_ENABLE_WIREDTIGER_CACHE_SIZE=256M
     volumes:
-      - /tmp/mongo-data:/data/db
+      - /var/lib/mongo-data:/data/db
       # For the /tmp/mongo-data volume, permissions should be 0755 or 0700.
       # The owner should match the user running MongoDB inside the container.
       # The official MongoDB image runs as user 'mongodb' (UID 999) by default.
