@@ -51,6 +51,6 @@ app.post('/register', async (req, res) => {
 });
 
 // Login
-app.post('/login', (req, res) => {});
+// app.post('/login', (req, res) => {});
 
 module.exports = app;
