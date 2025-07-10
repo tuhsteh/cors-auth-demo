@@ -1,8 +1,9 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const { MONGO_URI, 
     MONGODB_USERNAME,
-    MONGODB_PASSWORD } = process.env;
+    MONGODB_PASSWORD,
+    MONGODB_INITDB_DATABASE } = process.env;
 
 console.log(`config/database:  MONGO_URI:  [${MONGO_URI}]`);
 
@@ -11,7 +12,8 @@ exports.connect = () => {
   mongoose
     .connect(MONGO_URI, {
       user: MONGODB_USERNAME,
-      pass: MONGODB_PASSWORD
+      pass: MONGODB_PASSWORD,
+      dbName: MONGODB_INITDB_DATABASE,
     })
     .then(() => {
       console.log('MongoDB connected successfully');
