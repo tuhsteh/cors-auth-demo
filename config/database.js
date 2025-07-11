@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
 
-const { MONGO_URI, 
-    MONGODB_USERNAME,
-    MONGODB_PASSWORD,
-    MONGODB_INITDB_DATABASE } = process.env;
+const {
+  MONGO_URI,
+  MONGODB_USERNAME,
+  MONGODB_PASSWORD,
+  MONGODB_INITDB_DATABASE,
+} = process.env;
 
 console.log(`config/database:  MONGO_URI:  [${MONGO_URI}]`);
 
