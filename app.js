@@ -4,7 +4,7 @@ const express = require('express');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const User = require('./model/user');
-const req = require('express/lib/request');
+//const req = require('express/lib/request');
 
 const app = express();
 
@@ -23,7 +23,7 @@ app.post('/register', async (req, res) => {
       return res.status(409).send('User Already Exists.  Please Login.');
     }
 
-    encryptedUserPassword = await bcrypt.hash(password, 10);
+    const encryptedUserPassword = await bcrypt.hash(password, 10);
 
     const user = await User.create({
       first_name: firstName,
