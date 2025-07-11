@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('@dotenvx/dotenvx').config();
 require('./config/database').connect();
 const express = require('express');
 const jwt = require('jsonwebtoken');
