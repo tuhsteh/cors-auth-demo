@@ -30,17 +30,17 @@ $ yarn dev
 
 ## Contributing
 
-If you'd like to join in, well, that's strange.  This is a personal project; it originated in a tutorial; it doesn't accomplish much; you could build your own thing instead.
+If you'd like to join in, well, that's strange. This is a personal project; it originated in a tutorial; it doesn't accomplish much; you could build your own thing instead.
 
 ### Keep Things Clean
 
-In the `package.json`, there are a couple items you can use to make sure we get along when it comes to code style and such.  
+In the `package.json`, there are a couple items you can use to make sure we get along when it comes to code style and such.
 
 ```shell
 $ yarn prettier # format code according to '@stylistic/es-lint' rules
 $ yarn lint # more rules, applied a slightly different way
 ```
 
-In the future, i'd like to add pre-commit hooks so you can't commit code that doesn't match the style, or has other JS issues.  That probably won't happen in this project.
+In the future, i'd like to add pre-commit hooks so you can't commit code that doesn't match the style, or has other JS issues. That probably won't happen in this project.
 
 --trs 2025_07_11
