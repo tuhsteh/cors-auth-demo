@@ -73,7 +73,9 @@ app.post('/login', async (req, res) => {
       // save user token
       user.token = token;
 
-      console.log(`User logged in:  [${user.first_name} ${user.last_name} ${email}]`);
+      console.log(
+        `User logged in:  [${user.first_name} ${user.last_name} ${email}]`
+      );
 
       return res.status(200).json(user);
     } else {
